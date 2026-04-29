@@ -204,12 +204,14 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center horizontally */
     gap: 12px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 15px var(--accent-glow);
     position: relative;
     overflow: hidden;
-    text-shadow: none; /* Force clear text */
+    text-shadow: none !important;
+    min-width: 200px; /* Ensure consistent width */
 }
 
 #scan-btn:hover:not(:disabled) {

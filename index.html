@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo-Lens | AI Accessibility Guardian</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Neural Background -->
+    <div class="bg-container">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <canvas id="neural-canvas"></canvas>
+    </div>
+
+    <div class="app-container">
+        <header>
+            <a href="index.html" class="brand">
+                <i class="ph-bold ph-eye-closed"></i>
+                <span>Echo-Lens</span>
+            </a>
+            <div class="system-status">
+                <span class="status-dot"></span>
+                <span>GUARDIAN MODE: ACTIVE</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero-section">
+                <h1>Bridging the <span class="gradient-text">Digital Divide</span></h1>
+                <p>AI-powered accessibility orchestration for a truly inclusive web.</p>
+            </div>
+
+            <div class="scanner-box">
+                <div class="input-group">
+                    <i class="ph ph-globe"></i>
+                    <input type="text" id="target-url" placeholder="Enter URL to scan and protect...">
+                    <button id="scan-btn">
+                        <span>Initialize Scan</span>
+                        <i class="ph-bold ph-radar"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Live Scan Console -->
+                <div class="glass-card console-card">
+                    <div class="card-header">
+                        <h3><i class="ph ph-terminal-window"></i> Neural Scan Console</h3>
+                        <span class="badge">Live</span>
+                    </div>
+                    <div id="log-container" class="log-stream">
+                        <div class="log-entry system">> Guardian Engine Initialized...</div>
+                        <div class="log-entry system">> Ready for URL ingestion...</div>
+                    </div>
+                </div>
+
+                <!-- Accessibility Metrics -->
+                <div class="glass-card metrics-card">
+                    <div class="card-header">
+                        <h3><i class="ph ph-chart-bar"></i> Impact Metrics</h3>
+                    </div>
+                    <div class="metrics-grid">
+                        <div class="metric">
+                            <span class="metric-label">Compliance</span>
+                            <span class="metric-value" id="compliance-val">--%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Fixes Generated</span>
+                            <span class="metric-value" id="fixes-val">0</span>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="scan-progress"></div>
+                    </div>
+                </div>
+
+                <!-- Guardian Action Panel -->
+                <div class="glass-card actions-card">
+                    <div class="card-header">
+                        <h3><i class="ph ph-shield-check"></i> Remedial Actions</h3>
+                    </div>
+                    <div id="action-list" class="action-items">
+                        <div class="empty-state">No scan data detected.</div>
+                    </div>
+                    <button id="export-btn" class="btn-secondary" disabled>
+                        <i class="ph ph-code"></i>
+                        Export Guardian Script
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <span>&copy; 2026 Ayanlogix | Built for Humanity</span>
+                <div class="social-links">
+                    <a href="https://github.com/ayanlogix" target="_blank" title="GitHub Profile"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://linkedin.com/in/ayanlogix" target="_blank" title="LinkedIn Profile"><i class="ph ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for Exported Script -->
+    <div id="modal" class="modal">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2><i class="ph-bold ph-code"></i> Guardian Protocol</h2>
+                <button class="close-modal" aria-label="Close Modal">
+                    <i class="ph-bold ph-x"></i>
+                </button>
+            </div>
+            <div class="modal-description">Deploy the following logic to the target site's console or header.</div>
+            <pre><code id="script-output"></code></pre>
+            <button class="copy-btn btn-primary">
+                <span>Copy Guardian Logic</span>
+                <i class="ph-bold ph-copy"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

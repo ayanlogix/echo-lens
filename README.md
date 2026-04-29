@@ -1,8 +1,8 @@
 # 🧠 Echo-Lens | AI Accessibility Guardian 🛰️🚀
 
-![Status](https://img.shields.io/badge/STATUS-OPERATIONAL-brightgreen?style=for-the-badge&logo=statuspage&logoColor=white)
-![Deployment](https://img.shields.io/badge/DEPLOYMENT-ACTIVE-blue?style=for-the-badge&logo=github-pages&logoColor=white)
-![License](https://img.shields.io/badge/LICENSE-MIT-purple?style=for-the-badge&logo=open-source-initiative&logoColor=white)
+[![Status](https://img.shields.io/badge/STATUS-OPERATIONAL-brightgreen?style=for-the-badge&logo=statuspage&logoColor=white)](https://ayanlogix.github.io/echo-lens)
+[![Deployment](https://img.shields.io/badge/DEPLOYMENT-ACTIVE-blue?style=for-the-badge&logo=github-pages&logoColor=white)](https://ayanlogix.github.io/echo-lens)
+[![License](https://img.shields.io/badge/LICENSE-MIT-purple?style=for-the-badge&logo=open-source-initiative&logoColor=white)](https://github.com/ayanlogix/echo-lens/blob/main/LICENSE)
 
 **Echo-Lens is a visionary diagnostic engine designed to bridge the digital divide by providing real-time accessibility orchestration.** It leverages the **Google Lighthouse Engine** to identify WCAG compliance gaps and synthesizes immediate remedial scripts.
 
